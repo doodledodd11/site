@@ -1,5 +1,85 @@
-INSERT INTO category (category_id, category_name, category_description) VALUES (0001, 'Category 1', 'Category 1 Description');
-INSERT INTO customer (customer_id, customer_name, password, email) VALUES (1000, 'Customer 1', 'password', 'email@email.com');
-INSERT INTO product (product_id, category_id, customer_id, name, description, price, stock) VALUES (0011, 0001, 1000, 'Product 1', 'Product 1 description', 10, 100);
-INSERT INTO cart (cart_id, customer_id) VALUES (1111, 1000);
-INSERT INTO cart_product (cart_id, product_id) VALUES (1111, 0011);
+INSERT INTO category (category_id, category_name, category_description)
+VALUES
+    (1, 'Category 1', 'Category 1 Description'),
+    (2, 'Category 2', 'Category 2 Description'),
+    (3, 'Category 3', 'Category 3 Description'),
+    (4, 'Category 4', 'Category 4 Description'),
+    (5, 'Category 5', 'Category 5 Description');
+INSERT INTO customer (customer_id, customer_name, password, email)
+VALUES
+    (1, 'Customer 1', 'password1', 'email1@email.com'),
+    (2, 'Customer 2', 'password2', 'email2@email.com'),
+    (3, 'Customer 3', 'password3', 'email3@email.com'),
+    (4, 'Customer 4', 'password4', 'email4@email.com'),
+    (5, 'Customer 5', 'password5', 'email5@email.com'),
+    (6, 'Customer 6', 'password6', 'email6@email.com'),
+    (7, 'Customer 7', 'password7', 'email7@email.com'),
+    (8, 'Customer 8', 'password8', 'email8@email.com'),
+    (9, 'Customer 9', 'password9', 'email9@email.com'),
+    (10, 'Customer 10', 'password10', 'email10@email.com');
+INSERT INTO product (product_id, category_id, customer_id, name, description, price, stock)
+VALUES
+    (1, 1, 1, 'Product 1', 'Product 1 description', 1, 1),
+    (2, 2, 2, 'Product 2', 'Product 2 description', 1, 1),
+    (3, 3, 3, 'Product 3', 'Product 3 description', 1, 1),
+    (4, 4, 4, 'Product 4', 'Product 4 description', 1, 1),
+    (5, 5, 5, 'Product 5', 'Product 5 description', 1, 1),
+    (6, 1, 6, 'Product 6', 'Product 6 description', 1, 1),
+    (7, 2, 7, 'Product 7', 'Product 7 description', 1, 1),
+    (8, 3, 8, 'Product 8', 'Product 8 description', 1, 1),
+    (9, 4, 9, 'Product 9', 'Product 9 description', 1, 1),
+    (10, 5, 10, 'Product 10', 'Product 10 description', 1, 1),
+    (11, 1, 1, 'Product 11', 'Product 11 description', 1, 1),
+    (12, 2, 2, 'Product 12', 'Product 12 description', 1, 1),
+    (13, 3, 3, 'Product 13', 'Product 13 description', 1, 1),
+    (14, 4, 4, 'Product 14', 'Product 14 description', 1, 1),
+    (15, 5, 5, 'Product 15', 'Product 15 description', 1, 1),
+    (16, 1, 6, 'Product 16', 'Product 16 description', 1, 1),
+    (17, 2, 7, 'Product 17', 'Product 17 description', 1, 1),
+    (18, 3, 8, 'Product 18', 'Product 18 description', 1, 1),
+    (19, 4, 9, 'Product 19', 'Product 19 description', 1, 1),
+    (20, 5, 10, 'Product 20', 'Product 20 description', 1, 1);
+INSERT INTO cart (cart_id, customer_id)
+VALUES
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (4, 4),
+    (5, 5),
+    (6, 6),
+    (7, 7),
+    (8, 8),
+    (9, 9),
+    (10, 10);
+INSERT INTO cart_product (cart_id, product_id)
+VALUES
+    (1, 17),
+    (1, 14),
+    (1, 8),
+    (2, 12),
+    (2, 2),
+    (2, 1),
+    (2, 10),
+    (2, 11),
+    (3, 11),
+    (4, 11),
+    (4, 4),
+    (4, 7),
+    (5, 5),
+    (5, 11),
+    (5, 3),
+    (5, 6),
+    (5, 9),
+    (5, 13),
+    (5, 18),
+    (6, 15),
+    (6, 3),
+    (6, 6),
+    (6, 16),
+    (7, 17),
+    (7, 18),
+    (8, 10),
+    (8, 20),
+    (9, 19),
+    (10, 17),
+    (10, 20);
